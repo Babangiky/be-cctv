@@ -108,5 +108,3 @@ node_modules/
 ## 📝 Lisensi
 
 MIT License © 2025 Riskiananda
-
-```
