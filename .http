@@ -1,0 +1,36 @@
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "123456"
+}
+
+### Get Cameras
+GET http://localhost:3000/api/cameras
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTg5YTE0NzgyOTczY2I1MzI2ZTYyNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDgzMTYzNiwiZXhwIjoxNzU0OTE4MDM2fQ.wQKGOE7WlONwKlGmgtsps_u5I4arqjlUiXWrB7_qvMo
+
+### Register Admin
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Admin",
+  "email": "admin@example.com",
+  "password": "123456"
+}
+
+
+### Create Camera
+POST http://localhost:3000/api/cameras
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTg5YTE0NzgyOTczY2I1MzI2ZTYyNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDgzMTYzNiwiZXhwIjoxNzU0OTE4MDM2fQ.wQKGOE7WlONwKlGmgtsps_u5I4arqjlUiXWrB7_qvMo
+Content-Type: application/json
+
+{
+  "name": "Kamera Depan",
+  "description": "Mengawasi gerbang utama",
+  "latitude": -6.200000,
+  "longitude": 106.816666,
+  "streamUrl": "rtsp://192.168.1.10/live"
+}
