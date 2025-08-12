@@ -8,9 +8,18 @@ dotenv.config();
 
 const app = express();
 
-app.options('*', cors());
+const corsOptions = {
+  origin: [
+    'http://localhost:8080',
+    'http://localhost:3000', 
+  ],
+  credentials: true, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
 
-// app.use(helmet());
+app.use(cors(corsOptions));
+
 
 app.use(express.json());
 
