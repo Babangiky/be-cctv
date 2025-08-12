@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-
+    "outDir": "./dist",
     "module": "nodenext",
     "target": "ES2020",
     "types": [],
+    "rootDir": "./src",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
