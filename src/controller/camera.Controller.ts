@@ -26,7 +26,7 @@ export const GetCameraById = async (req: Request, res: Response) => {
 };
 
 export const CreateCamera = async (req: Request, res: Response) => {
-  const { name, description, latitude, longitude, streamUrl, is_active } =
+  const { name, description, latitude, longitude,location, streamUrl, is_active } =
     req.body;
   try {
     const newCamera = await CameraModel.create({
@@ -35,6 +35,7 @@ export const CreateCamera = async (req: Request, res: Response) => {
       latitude,
       longitude,
       streamUrl,
+      location,
       is_active,
     });
     res.status(201).json(newCamera);
@@ -46,12 +47,12 @@ export const CreateCamera = async (req: Request, res: Response) => {
 
 export const UpdateCamera = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const { name, description, latitude, longitude, streamUrl, is_active } =
+  const { name, description,location, latitude, longitude, streamUrl, is_active } =
     req.body;
   try {
     const updatedCamera = await CameraModel.findByIdAndUpdate(
       id,
-      { name, description, latitude, longitude, streamUrl, is_active },
+      { name, description, latitude, longitude, streamUrl,location, is_active },
       { new: true, runValidators: true }
     );
     if (!updatedCamera) {

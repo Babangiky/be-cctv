@@ -6,6 +6,7 @@ export interface ICamera extends Document {
   latitude: number;
   longitude: number;
   streamUrl: string;
+  location: string;
   is_active: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -41,6 +42,10 @@ const CameraSchema = new Schema<ICamera>(
       type: String,
       required: true,
       trim: true,
+    },
+    location: {
+      type: String,
+      required: true,
     },
     is_active: {
       type: Boolean,

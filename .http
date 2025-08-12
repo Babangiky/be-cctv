@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ### Get Cameras
 GET http://localhost:3000/api/cameras
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTg5YTE0NzgyOTczY2I1MzI2ZTYyNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDgzMTYzNiwiZXhwIjoxNzU0OTE4MDM2fQ.wQKGOE7WlONwKlGmgtsps_u5I4arqjlUiXWrB7_qvMo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTg5YTE0NzgyOTczY2I1MzI2ZTYyNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDg4NDQzMSwiZXhwIjoxNzU0OTcwODMxfQ.PnOuMwTwoVmgUR-F1NdIddJR1wpUNeaN_WbotzOSY70
 
 ### Register Admin
 POST http://localhost:3000/api/auth/register
@@ -32,5 +32,6 @@ Content-Type: application/json
   "description": "Mengawasi gerbang utama",
   "latitude": -6.200000,
   "longitude": 106.816666,
+  "location": "Jakarta",
   "streamUrl": "rtsp://192.168.1.10/live"
 }
