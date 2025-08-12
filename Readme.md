@@ -108,11 +108,3 @@ node_modules/
 ## 📝 Lisensi
 
 MIT License © 2025 Riskiananda
-
-```
-
----
-
-Kalau mau, README ini bisa langsung aku tambahkan **contoh request API** pakai `curl` atau `REST Client VSCode` biar frontend bisa langsung nyoba integrasi.  
-Mau aku tambahin sekalian?
-```
